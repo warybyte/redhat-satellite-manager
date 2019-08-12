@@ -1,7 +1,7 @@
 #
-# This script runs smoothly on Redhat 7.7 OS, Redhat Satellite version 6.3 - 6.5. Simply insert your Content View (CV) names
-# and it will parse the rest of the data needed to publish a new CV version, promote to associated Life-cycle environment,
-# then clean up older versions of the CV.
+# This script runs smoothly on Redhat 7.7 OS, Redhat Satellite version 6.3 - 6.5, Bash 4.2. 
+# Insert your Content View (CV) names in the FOR loop and the script will parse the rest of the data needed to 
+# publish a new CV version, promote to associated Life-cycle environment, then clean up older versions of the CV.
 #
 #!/bin/bash
 for CV_NAME in $(echo <CV1> <CV2> ... <CVn>)
